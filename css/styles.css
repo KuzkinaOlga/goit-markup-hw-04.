@@ -298,11 +298,22 @@ address {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.social {
+.media-box {
   display: block;
   width: 44px;
   height: 44px;
   background: #ffffff;
+}
+.social {
+  display: flex;
+  justify-content: center;
+}
+.media-icon {
+  width: 20px;
+  height: 20px;
+}
+.media-icon:hover {
+  fill: var(--theme-color);
 }
 /*=============portfolio=========*/
 .portfolio {
@@ -381,6 +392,12 @@ address {
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: #757575;
+}
+/*========section clients=======*/
+.section-clients {
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 /*=========footer start here=========*/
 
