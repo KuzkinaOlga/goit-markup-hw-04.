@@ -165,6 +165,7 @@ address {
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   text-align: center;
   max-width: 1600px;
 }
@@ -306,13 +307,16 @@ address {
   color: #757575;
 }
 .media-box {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   background: #ffffff;
 }
 .social-list {
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 .social-list > .social:not(:last-child) {
@@ -324,6 +328,7 @@ address {
   fill: #afb1b8;
 }
 .media-icon:hover {
+  color: var(--theme-color);
   fill: var(--theme-color);
 }
 /*=============portfolio=========*/
@@ -434,16 +439,17 @@ address {
 .list-clients > .item:not(:last-child) {
   margin-right: 30px;
 }
-.list-clients > .item:hover,
-.list-clients > .item:focus {
-  color: var(--theme-color);
-  fill: var(--theme-color);
-}
 .clients-logo {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
 }
+.list-clients > .link-item:hover,
+.list-clients > .link-item:focus {
+  color: var(--theme-color);
+  fill: var(--theme-color);
+}
+
 /*=========footer start here=========*/
 
 .footer {
@@ -486,6 +492,9 @@ address {
 .contacts-footer > .item:not(:last-child) {
   margin-bottom: 9px;
 }
+.footer-main {
+  margin-right: 70px;
+}
 .social-footer {
   display: flex;
   align-items: baseline;
@@ -498,14 +507,19 @@ address {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 
   color: #ffffff;
 }
+.footer-list {
+  display: flex;
+}
 .media-footer {
-  display: block;
 }
 .link-footer {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .icon-link {
   width: 20px;
