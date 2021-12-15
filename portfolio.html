@@ -14,22 +14,28 @@
         <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!--header-->
+    <!-----------------------header----------------------------->
     <header class="header">
         <div class="container main-nav">
             <nav class="nav-header">
                 <a class="logo" href="./index.html"><span class="web">Web</span>Studio</a>
                 <ul class="site-nav ">
-                    <li class="item"><a class="site-nav-link" href="./index.html">Студия</a></li>
-                    <li class="item"><a class="site-nav-link active" href="./portfolio.html">Портфолио</a></li>
+                    <li class="item"><a class="site-nav-link active" href="./index.html">Студия</a></li>
+                    <li class="item"><a class="site-nav-link" href="./portfolio.html">Портфолио</a></li>
                     <li class="item"><a class="site-nav-link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="linkbox">
-                <li class="item"><a class="linkbox-link" href="mailto:info@devstudio.com"
-                        class="linkbox-mail">info@devstudio.com</a></li>
-                <li class="item"><a class="linkbox-link" href="tel:+380961111111" class="linkbox-phone">+38 096 111 11
-                        11</a></li>
+                <li class="item envelope"><a class="linkbox-link" href="mailto:info@devstudio.com" class="linkbox-mail">
+                        <svg>
+                            <use href='./images/icons/sprite.svg#envelope'></use>
+                        </svg>
+                        info@devstudio.com</a></li>
+                <li class="item phone"><a class="linkbox-link" href="tel:+380961111111" class="linkbox-phone">
+                        <svg>
+                            <use href='./images/icons/sprite.svg#phone'></use>
+                        </svg>
+                        +38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
@@ -106,12 +112,40 @@
     </main>
     <footer class="footer">
         <div class="container footer-list">
-            <a class="logo-footer" href="./index.html"><span class="web-footer">Web</span>Studio</a>
-            <address class="adress-link item">г. Киев, пр-т Леси Украинки, 26</address>
-            <ul class="contacts-footer">
-                <li class="item"><a class="contacts-footer-link" href="mailto:info@example.com">info@example.com</a></li>
-                <li class="item"><a class="contacts-footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
-            </ul>
+            <div class="footer-main">
+                <a class="logo-footer" href="./index.html"><span class="web-footer">Web</span>Studio</a>
+                <address class="adress-link item">г. Киев, пр-т Леси Украинки, 26</address>
+                <ul class="contacts-footer">
+                    <li class="item"><a class="contacts-footer-link" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="item"><a class="contacts-footer-link" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                </ul>
+            </div>
+            <div class="media-footer">
+                <h3 class="footer-title">присоединяйтесь</h3>
+                <ul class="link-footer-main">
+                    <li class="bag-link"><a href="#" class="link-footer">
+                            <svg class="icon-link">
+                                <use href='./images/icons/sprite.svg#instagram'></use>
+                            </svg>
+                        </a></li>
+                    <li class="bag-link"><a href="#" class="link-footer">
+                            <svg class="icon-link">
+                                <use href='./images/icons/sprite.svg#twitter'></use>
+                            </svg>
+                        </a></li>
+                    <li class="bag-link"><a href="#" class="link-footer">
+                            <svg class="icon-link">
+                                <use href='./images/icons/sprite.svg#facebook'></use>
+                            </svg>
+                        </a></li>
+                    <li class="bag-link"><a href="#" class="link-footer">
+                            <svg class="icon-link">
+                                <use href='./images/icons/sprite.svg#linkedin'></use>
+                            </svg>
+                        </a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
