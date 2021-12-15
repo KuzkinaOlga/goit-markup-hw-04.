@@ -312,12 +312,17 @@ address {
   justify-content: center;
   width: 44px;
   height: 44px;
-  background: #ffffff;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #afb1b8;
+}
+.social {
 }
 .social-list {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
 }
 .social-list > .social:not(:last-child) {
   margin-right: 10px;
@@ -325,12 +330,59 @@ address {
 .media-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
-.media-icon:hover {
+.media-box:hover,
+.media-box:focus {
+  background-color: var(--theme-color);
+  color: var(--background-color);
+  fill: var(--background-color);
+}
+
+/*========section clients=======*/
+.section-clients {
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: #212121;
+}
+.list-clients {
+  display: flex;
+}
+.list-clients > .item {
+}
+.list-clients > .item:not(:last-child) {
+  margin-right: 30px;
+}
+.link-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afb1b8;
+}
+.clients-logo {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+.link-item:hover,
+.link-item:focus {
   color: var(--theme-color);
   fill: var(--theme-color);
+  border: 1px solid var(--theme-color);
 }
+
 /*=============portfolio=========*/
 .portfolio {
   padding-top: 94px;
@@ -409,46 +461,6 @@ address {
   letter-spacing: 0.03em;
   color: #757575;
 }
-/*========section clients=======*/
-.section-clients {
-  align-items: center;
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.clients-title {
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  color: #212121;
-}
-.list-clients {
-  display: flex;
-}
-.list-clients > .item {
-  width: 170px;
-  height: 92px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.list-clients > .item:not(:last-child) {
-  margin-right: 30px;
-}
-.clients-logo {
-  width: 106px;
-  height: 60px;
-  fill: #afb1b8;
-}
-.link-item:hover,
-.link-item:focus {
-  color: var(--theme-color);
-  fill: var(--theme-color);
-}
 
 /*=========footer start here=========*/
 
@@ -495,10 +507,6 @@ address {
 .footer-main {
   margin-right: 70px;
 }
-.social-footer {
-  display: flex;
-  align-items: baseline;
-}
 .footer-title {
   font-family: Roboto;
   font-style: normal;
@@ -514,17 +522,23 @@ address {
 .footer-list {
   display: flex;
 }
-.media-footer {
-}
 .link-footer-main {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .icon-link {
   width: 20px;
   height: 20px;
   fill: white;
+}
+.link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--background-color);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .bag-link {
   width: 44px;
@@ -533,7 +547,9 @@ address {
 .link-footer-main > .bag-link:not(:last-child) {
   margin-right: 10px;
 }
-.link-footer-main > .link-footer:hover .link-footer-main > .link-footer:focus {
-  color: var(--theme-color);
-  fill: var(--theme-color);
+.link-footer:hover,
+.link-footer:focus {
+  background-color: var(--theme-color);
+  color: var(--background-color);
+  fill: var(--background-color);
 }
