@@ -444,8 +444,8 @@ address {
   height: 60px;
   fill: #afb1b8;
 }
-.list-clients > .link-item:hover,
-.list-clients > .link-item:focus {
+.link-item:hover,
+.link-item:focus {
   color: var(--theme-color);
   fill: var(--theme-color);
 }
@@ -516,7 +516,7 @@ address {
 }
 .media-footer {
 }
-.link-footer {
+.link-footer-main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -530,6 +530,10 @@ address {
   width: 44px;
   height: 44px;
 }
-.link-footer > .bag-link:not(:last-child) {
+.link-footer-main > .bag-link:not(:last-child) {
   margin-right: 10px;
+}
+.link-footer-main > .link-footer:hover .link-footer-main > .link-footer:focus {
+  color: var(--theme-color);
+  fill: var(--theme-color);
 }
